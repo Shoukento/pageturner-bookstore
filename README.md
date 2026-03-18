@@ -1,22 +1,17 @@
-# Laboratory Activity 3: Online Bookstore Management System
+# Online Bookstore Management System
 
-**Student:** Rinante Buntod  
-**Due Date:** Feb 9, 2026
-
-## Scenario – PageTurner Online Bookstore
+## PageTurner Online Bookstore
 PageTurner Inc. is a growing online bookstore company that aims to modernize its operations by building a comprehensive web-based management system called the **PageTurner Online Bookstore Management System**.
-
-## Target Users and Capabilities
 
 ### Administrators
 - **Manage Books (CRUD)**: Full control over the book inventory, including titles, authors, ISBNs, prices, and stock quantities.
-- **Manage Categories (CRUD)**: Organize books into genres/categories with descriptions and slugs.
+- **Manage Categories (CRUD)**: Organize books into genres/categories with descriptions.
 - **View Customer Orders**: Monitor all orders placed by customers and update their status (Pending, Processing, Completed, Cancelled).
 
 ### Registered Customers
 - **Browse Books & View Details**: Explore the catalog and read detailed information about each book.
 - **Place Orders**: Purchase books with real-time stock and price calculations.
-- **Write Reviews**: Provide star ratings and comments for books they have successfully purchased and received.
+- **Write Reviews**: Provide star ratings and comments for books they have successfully purchased.
 
 ### General Visitors
 - **Browse Catalog**: View the available collection of books.
@@ -25,9 +20,10 @@ PageTurner Inc. is a growing online bookstore company that aims to modernize its
 
 ## Technical Implementation
 
-- **Framework**: Laravel 11.x
+- **Framework**: Laravel 12.54.1
+- **PHP 8.5.1
 - **Authentication**: Laravel Breeze (Tailwind CSS)
-- **Database**: SQLite (default) / MySQL
+- **Database**: MySQL
 - **Core Features**:
   - Eloquent Relationships (User ↔ Orders ↔ OrderItems ↔ Books, Books ↔ Reviews, Books ↔ Category)
   - Role-Based Access Control (RBAC) via middleware
@@ -67,5 +63,5 @@ PageTurner Inc. is a growing online bookstore company that aims to modernize its
    ```
 
 ## Admin Credentials
-- **Email**: `admin@example.com`
+- **Email**: `admin@pageturner.com`
 - **Password**: `password` (standard seeder password)
